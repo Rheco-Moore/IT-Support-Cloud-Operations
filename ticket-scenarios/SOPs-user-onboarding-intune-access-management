@@ -1,0 +1,99 @@
+# SOP: User Onboarding and Access Management (Microsoft Intune, Entra ID & Multi-Cloud)
+
+## Objective
+To ensure new users are onboarded securely, provisioned with appropriate access, and able to begin work immediately within a controlled and auditable environment.
+
+## Request Summary
+A request was received to onboard multiple users across different departments. Each user required specific access based on their role and responsibilities within the organization.
+
+## Process Overview
+
+### 1. Request Validation
+- Reviewed onboarding tickets
+- Confirmed approvals from relevant departments
+- Verified required access levels and role-based permissions
+
+### 2. Identity Creation
+- Created user accounts in Microsoft Entra ID
+- Generated initial login credentials
+
+### 3. Group-Based Access Control (RBAC)
+- Identified or created appropriate security groups aligned to user roles
+- Assigned permissions to groups based on functional requirements
+- Added users to respective groups
+
+**Rationale:**
+- Enables scalable access management  
+- Simplifies onboarding and offboarding  
+- Improves traceability and auditability  
+- Reduces risk of misconfigured individual permissions  
+
+---
+
+### 4. Endpoint Onboarding (Microsoft Intune)
+- Enrolled user devices into Microsoft Intune
+- Applied security and compliance policies
+- Ensured endpoint protection configurations were enforced
+
+---
+
+### 5. Multi-Cloud Access Management
+
+Where users required access to additional environments:
+
+- Assigned appropriate IAM roles and permissions in AWS
+- Ensured correct access configuration within GCP environments
+- Validated that permissions aligned with job responsibilities
+- Applied least-privilege access principles across platforms
+
+**Consistency Measures:**
+- Maintained alignment between Microsoft, AWS, and GCP access controls  
+- Ensured users only had access required for their role  
+- Reviewed permissions to prevent over-provisioning  
+
+---
+
+### 6. Security Configuration
+- Enforced Multi-Factor Authentication (MFA)
+- Ensured users completed secure sign-in setup
+- Verified compliance with organizational security requirements
+
+---
+
+### 7. User Communication
+- Provided users with login credentials
+- Shared step-by-step sign-in guidance
+- Confirmed successful access and system readiness
+
+---
+
+## Outcome
+
+- Users successfully onboarded with appropriate role-based access  
+- Devices secured and compliant with endpoint policies  
+- Access consistent across Microsoft, AWS, and GCP environments  
+- Users able to begin work immediately upon login  
+
+---
+
+## Documentation
+
+- Recorded onboarding actions in ticketing system  
+- Documented group assignments and access permissions  
+- Maintained audit trail for approvals and configuration steps  
+
+---
+
+## Key Takeaways
+
+- Group-based access control improves scalability and security  
+- Structured onboarding reduces operational delays  
+- Multi-cloud access requires consistent governance practices  
+- MFA and endpoint compliance are critical for securing user environments  
+- Proper documentation supports audit readiness and operational efficiency  
+
+---
+
+## Note
+
+This example is generalized for portfolio purposes and does not include any sensitive or proprietary information.
