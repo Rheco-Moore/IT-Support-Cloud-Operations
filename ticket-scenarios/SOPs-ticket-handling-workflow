@@ -1,0 +1,91 @@
+# SOP: Ticket Handling Workflow
+
+## Objective
+To ensure all support requests are handled consistently, documented accurately, and resolved efficiently within a structured support environment.
+
+## Scope
+This workflow applies to all incoming support requests received through chat, email, or ticketing systems such as Jira or CRM-based platforms.
+
+---
+
+## Process Overview
+
+### 1. Ticket Intake
+- Receive request via chat, email, or support system
+- Log or create ticket in ticketing system
+- Capture key details:
+  - User information
+  - Issue description
+  - Affected system/service
+
+---
+
+### 2. Initial Assessment
+- Identify issue type and severity
+- Determine priority level based on impact, urgency, and defined risk criteria
+- Confirm whether issue is isolated or widespread
+- Acknowledge user request and begin investigation
+
+---
+
+### 3. Troubleshooting
+- Follow structured troubleshooting approach
+- Review logs, configurations, and user inputs
+- Use internal documentation or knowledge base where applicable
+- Attempt to reproduce issue when possible
+
+---
+
+### 4. Resolution
+- Apply appropriate fix or provide guidance to user
+- Validate resolution with user confirmation
+- Ensure issue is fully resolved before closure
+
+---
+
+### 5. Escalation (if required)
+- Escalate to appropriate team if issue cannot be resolved at current level
+- Provide complete documentation including:
+  - Steps taken
+  - Findings
+  - Supporting logs or screenshots
+
+---
+
+### 6. Documentation
+- Record root cause of issue
+- Document troubleshooting steps and resolution
+- Update ticket with accurate and complete information
+- Contribute to knowledge base if issue is recurring
+
+---
+
+### 7. Ticket Closure
+- Confirm resolution with user
+- Ensure documentation is complete
+- Close ticket within system
+
+---
+
+## Key Principles
+
+- Accuracy in documentation  
+- Clear and professional communication  
+- Timely updates and follow-ups  
+- Structured troubleshooting approach  
+- Proper escalation when required  
+
+---
+
+## Outcome
+
+- Consistent handling of support requests  
+- Improved response and resolution time  
+- Enhanced traceability and audit readiness  
+- Better knowledge sharing across support teams  
+
+---
+
+## Note
+
+This workflow is generalized for portfolio purposes and reflects standard help desk and technical support practices.
