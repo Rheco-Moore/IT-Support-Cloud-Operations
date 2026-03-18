@@ -1,0 +1,54 @@
+# Ticket Scenario: User Unable to Sign In to Microsoft 365 (MFA Issue)
+
+## Issue Summary
+A user reported being unable to sign in to Microsoft 365 services despite entering correct credentials. The user indicated repeated login failures.
+
+## Initial Assessment
+- Verified user identity and affected services
+- Confirmed correct username and login method
+- Attempted to reproduce the issue
+- Confirmed authentication failure
+
+## Investigation
+
+1. Reviewed account status in Microsoft Entra ID
+   - Confirmed the account was active and not locked or disabled
+
+2. Checked sign-in logs
+   - Identified repeated failed authentication attempts
+   - Observed incomplete authentication flow
+
+3. Reviewed Conditional Access policies
+   - Confirmed that Multi-Factor Authentication (MFA) was required
+
+4. Identified root cause
+   - Determined that the user had not completed MFA registration
+   - Authentication process was failing due to missing MFA configuration
+
+## Resolution
+
+- Guided the user through MFA registration process
+- Reset authentication methods where necessary
+- Ensured MFA setup was completed successfully
+- Retested login process
+
+## Outcome
+
+- User successfully signed in after completing MFA setup
+- Access to Microsoft 365 services restored
+
+## Documentation
+
+- Documented issue details, root cause, and resolution steps in ticketing system
+- Updated internal records for tracking and reporting
+
+## Key Takeaways
+
+- MFA configuration is a common cause of login failures
+- Sign-in logs are essential for identifying authentication issues
+- Conditional Access policies should always be reviewed during login troubleshooting
+- Clear user guidance improves resolution time and user experience
+
+## Note
+
+This example is generalized for portfolio purposes and does not include any sensitive or proprietary configuration details.
