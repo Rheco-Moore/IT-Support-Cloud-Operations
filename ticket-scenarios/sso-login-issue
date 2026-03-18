@@ -1,0 +1,51 @@
+# Ticket Scenario: User Unable to Sign In to Terraform via Single Sign-On
+
+## Issue Summary
+A user reported being unable to sign in to a Terraform environment using Single Sign-On (SSO). The user indicated that access had previously been working and was now failing unexpectedly.
+
+## Initial Assessment
+- Verified the user’s identity and confirmed the affected application
+- Confirmed the expected sign-in method was SSO
+- Attempted to validate the issue by testing the sign-in flow
+- Confirmed that authentication was failing
+
+## Investigation
+1. Reviewed recent authentication activity
+   - Checked sign-in and access logs for the affected environment
+   - Confirmed the user had successfully accessed the environment the previous day through SSO
+
+2. Verified user account status
+   - Confirmed the account was active and had not been disabled or locked
+
+3. Reviewed authentication-related configuration and policies
+   - Checked for recent changes that could affect the login flow
+   - Investigated dependencies related to certificate-based authentication
+
+4. Identified the root cause
+   - Determined that the certificate used in the authentication process had expired or reached its renewal point
+   - Confirmed this was preventing successful SSO authentication
+
+## Resolution
+- Generated or applied an updated certificate as part of the authentication configuration
+- Updated the relevant configuration so the certificate reflected a new valid expiry period
+- Re-tested the sign-in process after the update
+
+## Outcome
+- User was asked to attempt sign-in again
+- User successfully authenticated and regained access to the Terraform environment
+- Access was confirmed as restored
+
+## Documentation
+- Documented the issue in the ticketing system
+- Recorded the root cause as certificate expiration within the SSO authentication flow
+- Documented the remediation steps taken and the successful outcome
+- Added the scenario to the knowledge base for future troubleshooting reference
+
+## Key Takeaways
+- Reviewing prior successful sign-in activity helps establish when an issue began
+- Certificate expiration can interrupt SSO authentication even when user accounts remain active
+- Validating logs, policies, and authentication dependencies is important when troubleshooting login failures
+- Clear documentation improves future response efficiency and knowledge sharing
+
+## Note
+This example is generalized for portfolio purposes and does not include any sensitive or proprietary configuration details.
