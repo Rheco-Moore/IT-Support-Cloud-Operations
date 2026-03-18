@@ -1,0 +1,56 @@
+# AWS EC2 Access Troubleshooting – Security Group & Access Validation
+
+## Issue Summary
+A user reported being unable to access an EC2 instance within an AWS environment. The user indicated that access had previously been working.
+
+## Initial Assessment
+- Verified instance status and confirmed it was running
+- Confirmed correct connection method (e.g., SSH)
+- Attempted to reproduce the issue
+- Confirmed access failure
+
+## Investigation
+
+1. Reviewed EC2 instance status
+   - Confirmed instance health checks were passing
+   - Verified correct IP address and connection details
+
+2. Checked Security Group configuration
+   - Reviewed inbound rules for required access ports (e.g., SSH - port 22)
+   - Identified that the user’s source IP was not permitted
+
+3. Reviewed IAM permissions
+   - Confirmed the user had appropriate access permissions for the environment
+
+4. Validated connection requirements
+   - Confirmed correct key pair usage and access method
+
+5. Identified root cause
+   - Security Group configuration did not allow inbound access from the user’s network
+
+## Resolution
+
+- Updated Security Group rules to allow appropriate inbound access
+- Ensured access aligned with required security controls
+- Retested connection to confirm successful access
+
+## Outcome
+
+- User successfully connected to EC2 instance
+- Access restored without further issues
+
+## Documentation
+
+- Documented root cause and configuration changes in ticketing system
+- Recorded troubleshooting steps and resolution for future reference
+
+## Key Takeaways
+
+- Security Group configurations are a common cause of access issues
+- Both network-level and identity-level access should be validated
+- Verifying configuration against user environment is critical
+- Proper documentation supports faster resolution for similar issues
+
+## Note
+
+This example is generalized for portfolio purposes and does not include any sensitive or proprietary configuration details.
